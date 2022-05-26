@@ -1,43 +1,5 @@
-<script lang="ts">
-	import { onMount } from 'svelte';
-
-	let line: HTMLElement;
-	let lineContainer: HTMLElement;
-
-	onMount(() => {
-		let prevTimeStamp: number;
-		let x: number = 0;
-		line.style.justifySelf = 'start';
-
-		let frame = requestAnimationFrame(loop);
-
-		function loop(timestamp: number) {
-			let speed = lineContainer.offsetWidth / 6;
-			if (prevTimeStamp === undefined) {
-				prevTimeStamp = timestamp;
-			}
-
-			const delta = (timestamp - prevTimeStamp) * 0.001;
-			prevTimeStamp = timestamp;
-
-			if (line.style.justifySelf == 'start') {
-				x += speed * delta;
-			} else {
-				x -= speed * delta;
-			}
-
-			if (x > lineContainer.offsetWidth) line.style.justifySelf = 'end';
-			if (x < -30) line.style.justifySelf = 'start';
-
-			line.style.width = `${x}px`;
-
-			frame = requestAnimationFrame(loop);
-		}
-
-		return () => {
-			cancelAnimationFrame(frame);
-		};
-	});
+<script>
+	import Rain from '../components/Rain.svelte';
 </script>
 
 <sevlte:head>
@@ -53,9 +15,10 @@
 		<a class="button" href="/about">ABOUT</a>
 		<a class="button" href="/projects">PROJECTS</a>
 	</nav>
-	<div class="lineContainer" bind:this={lineContainer}>
-		<div class="line" bind:this={line} />
-	</div>
+	<Rain />
+	<!-- <div class="lineContainer" bind:this={lineContainer}> -->
+	<!-- 	<div class="line" bind:this={line} /> -->
+	<!-- </div> -->
 </div>
 
 <style>
