@@ -43,14 +43,14 @@
 	.name {
 		font-weight: 600;
 		letter-spacing: 0.2rem;
-		font-size: 18rem;
+		font-size: 14rem;
 		color: hsl(var(--light-purple));
 	}
 
 	.dev {
 		text-shadow: -2px 2px 2px hsl(var(--core-purple)), 2px 2px 2px hsl(var(--core-purple)),
 			2px -2px 2px hsl(var(--core-purple)), -2px -2px 2px hsl(var(--core-purple));
-		font-size: 9rem;
+		font-size: 6rem;
 		color: hsl(var(--dark-blue));
 	}
 
@@ -70,7 +70,7 @@
 		padding: 1rem;
 		display: flex;
 		flex: 1 1 8rem;
-		max-width: 30rem;
+		max-width: 25rem;
 		justify-content: center;
 		align-items: center;
 		border-radius: 0.3rem;
