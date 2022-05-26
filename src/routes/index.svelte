@@ -75,7 +75,7 @@
 		align-items: center;
 		border-radius: 0.3rem;
 		margin: 1rem 4rem 1rem 0;
-		font-size: 5rem;
+		font-size: 3rem;
 		font-weight: 600;
 		color: hsl(var(--dark-blue));
 		background-color: hsl(var(--light-purple));
