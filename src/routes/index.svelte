@@ -80,19 +80,4 @@
 		color: hsl(var(--dark-blue));
 		background-color: hsl(var(--light-purple));
 	}
-
-	.lineContainer {
-		grid-column: 2 / 4;
-		grid-row: 3 / 4;
-		display: grid;
-	}
-
-	.line {
-		background-color: hsl(var(--core-purple));
-		height: 2px;
-		justify-self: flex-end;
-		align-self: flex-start;
-		overflow: hidden;
-		max-width: 100%;
-	}
 </style>
