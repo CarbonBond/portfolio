@@ -51,6 +51,7 @@
 		text-shadow: -2px 2px 2px hsl(var(--core-purple)), 2px 2px 2px hsl(var(--core-purple)),
 			2px -2px 2px hsl(var(--core-purple)), -2px -2px 2px hsl(var(--core-purple));
 		font-size: 4rem;
+		letter-spacing: 0.1rem;
 		color: hsl(var(--dark-blue));
 	}
 
@@ -75,9 +76,18 @@
 		align-items: center;
 		border-radius: 0.3rem;
 		margin: 0 4rem 1rem 0;
-		font-size: 2rem;
+		font-size: 2.5rem;
 		font-weight: 600;
-		color: hsl(var(--dark-blue));
-		background-color: hsl(var(--light-purple));
+		box-shadow: 0 0 2px 1px hsl(var(--light-purple));
+		background-color: hsl(var(--dark-blue));
+		color: hsl(var(--light-purple));
+		transition: background-color 0.65s, box-shadow 0.75s;
+	}
+	.button:hover {
+		background-color: hsl(var(--core-purple));
+		box-shadow: 0 0 2px 1px hsl(var(--core-purple));
+	}
+	.button:active {
+		background-color: hsl(var(--core-purple), 50%);
 	}
 </style>
