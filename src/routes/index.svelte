@@ -1,19 +1,20 @@
 <script>
 	import Rain from '../components/Rain.svelte';
+	import { fade } from 'svelte/transition';
 </script>
 
 <sevlte:head>
 	<title>Brandon Burge</title>
 </sevlte:head>
 
-<div class="wrapper">
+<div class="wrapper" transition:fade>
 	<div class="title">
 		<h1 class="name">BRANDON BURGE</h1>
 		<h2 class="dev">FULL STACK DEVELOPER</h2>
 	</div>
 	<nav>
-		<a class="button" href="/about">ABOUT</a>
-		<a class="button" href="/projects">PROJECTS</a>
+		<a class="button" href="/home/about">ABOUT</a>
+		<a class="button" href="/home/projects">PROJECTS</a>
 	</nav>
 	<Rain />
 	<!-- <div class="lineContainer" bind:this={lineContainer}> -->

@@ -8,6 +8,8 @@
 
 body {
 background-color: hsl(var(--dark-blue));
+color: hsl(var(--light-purple));
+  font-size: 1.6rem;
 }
 /* Box sizing rules */
 *,
