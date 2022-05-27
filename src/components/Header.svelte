@@ -3,11 +3,13 @@
 </script>
 
 <div class="header">
-	<a href="/" class="logoContainer"><img class="logo" src={logo} alt="Logo" /></a>
 	<nav>
-		<a href="/home/about" class="link">About</a>
-		<a href="/home/projects" class="link">Projects</a>
-		<a href="/home/skills" class="link">Skills</a>
+		<a href="/" class="logoContainer"><img class="logo" src={logo} alt="Logo" /></a>
+		<div class="linkContainer">
+			<a href="/home/about" class="link">About</a>
+			<a href="/home/projects" class="link">Projects</a>
+			<a href="/home/skills" class="link">Skills</a>
+		</div>
 	</nav>
 </div>
 
@@ -16,18 +18,17 @@
 		height: 15rem;
 	}
 	.header > nav {
-		display: flex;
-		flex-wrap: wrap;
+		display: grid;
+		padding: 2rem;
+		grid-auto-flow: column;
 		height: 10rem;
-		padding: 3rem 13rem;
 		justify-content: center;
 		align-items: center;
+		grid-template-columns: minmax(10rem, 1fr) 2fr minmax(10rem, 1fr);
 	}
 
 	.logoContainer {
-		position: absolute;
-		left: 3rem;
-		top: 3rem;
+		grid-column: 1 / 2;
 		max-width: 10rem;
 		height: 10rem;
 		display: flex;
@@ -37,19 +38,28 @@
 		object-fit: contain;
 	}
 
+	.linkContainer {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		grid-column: 2/3;
+	}
+
 	.link {
 		max-width: 15rem;
+		width: 10rem;
 		flex: 1 0 10rem;
-		margin: 1rem 3rem;
+		margin: 0.5rem 3rem;
 
 		text-align: center;
 
-		padding: 1rem;
+		padding: 0.5rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		border-radius: 0.3rem;
-		font-size: 2.5rem;
+		font-size: 2rem;
 		font-weight: 600;
 		box-shadow: 0 0 2px 1px hsl(var(--light-purple));
 		background-color: hsl(var(--dark-blue));
