@@ -9,46 +9,49 @@
 				createRainDrop(rainContainer, 100, 500);
 			}, Math.random() * 4000);
 		}
-	});
 
-	const createRainDrop = (node: HTMLElement, minHeight: number, maxHeight: number) => {
-		let rain = document.createElement('div');
-		rain.classList.add('rain');
-		rain.setAttribute(
-			'style',
-			` left:${Math.random() * node.offsetWidth}px;  height: ${Math.max(
-				minHeight,
-				Math.random() * maxHeight
-			)}px; `
-		);
-		let prevTimeStamp: number;
-		let x: number = 0 - maxHeight;
-		node.appendChild(rain);
+		const createRainDrop = (node: HTMLElement, minHeight: number, maxHeight: number) => {
+			if (!node) {
+				return;
+			}
+			let rain = document.createElement('div');
+			rain.classList.add('rain');
+			rain.setAttribute(
+				'style',
+				` left:${Math.random() * node.offsetWidth}px;  height: ${Math.max(
+					minHeight,
+					Math.random() * maxHeight
+				)}px; `
+			);
+			let prevTimeStamp: number;
+			let x: number = 0 - maxHeight;
+			node.appendChild(rain);
 
-		let frame = requestAnimationFrame(loop);
-		let speed = Math.max(30, Math.random() * 100);
+			let frame = requestAnimationFrame(loop);
+			let speed = Math.max(30, Math.random() * 100);
 
-		function loop(timestamp: number) {
-			if (prevTimeStamp === undefined) {
+			function loop(timestamp: number) {
+				if (prevTimeStamp === undefined) {
+					prevTimeStamp = timestamp;
+				}
+
+				const delta = 0.01 * (timestamp - prevTimeStamp);
 				prevTimeStamp = timestamp;
+
+				x += speed * delta;
+
+				rain.style.transform = `translate(0,${x}px)`;
+
+				if (x > node.offsetHeight) {
+					cancelAnimationFrame(frame);
+					node.removeChild(rain);
+					createRainDrop(rainContainer, 100, 500);
+				} else {
+					frame = requestAnimationFrame(loop);
+				}
 			}
-
-			const delta = 0.01 * (timestamp - prevTimeStamp);
-			prevTimeStamp = timestamp;
-
-			x += speed * delta;
-
-			rain.style.transform = `translate(0,${x}px)`;
-
-			if (x > node.offsetHeight) {
-				cancelAnimationFrame(frame);
-				node.removeChild(rain);
-				createRainDrop(rainContainer, 100, 500);
-			} else {
-				frame = requestAnimationFrame(loop);
-			}
-		}
-	};
+		};
+	});
 </script>
 
 <div class="rainContainer" bind:this={rainContainer} />
