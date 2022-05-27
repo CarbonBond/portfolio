@@ -43,14 +43,14 @@
 	.name {
 		font-weight: 600;
 		letter-spacing: 0.2rem;
-		font-size: 14rem;
+		font-size: 10rem;
 		color: hsl(var(--light-purple));
 	}
 
 	.dev {
 		text-shadow: -2px 2px 2px hsl(var(--core-purple)), 2px 2px 2px hsl(var(--core-purple)),
 			2px -2px 2px hsl(var(--core-purple)), -2px -2px 2px hsl(var(--core-purple));
-		font-size: 6rem;
+		font-size: 4rem;
 		color: hsl(var(--dark-blue));
 	}
 
@@ -70,12 +70,12 @@
 		padding: 1rem;
 		display: flex;
 		flex: 1 1 8rem;
-		max-width: 25rem;
+		max-width: 20rem;
 		justify-content: center;
 		align-items: center;
 		border-radius: 0.3rem;
-		margin: 1rem 4rem 1rem 0;
-		font-size: 3rem;
+		margin: 0 4rem 1rem 0;
+		font-size: 2rem;
 		font-weight: 600;
 		color: hsl(var(--dark-blue));
 		background-color: hsl(var(--light-purple));
