@@ -26,7 +26,7 @@
 		node.appendChild(rain);
 
 		let frame = requestAnimationFrame(loop);
-		let speed = Math.max(10, Math.random() * 100);
+		let speed = Math.max(30, Math.random() * 100);
 
 		function loop(timestamp: number) {
 			if (prevTimeStamp === undefined) {
@@ -64,8 +64,12 @@
 
 	:global(.rain) {
 		position: absolute;
-		box-shadow: 0px 0px 2px hsl(var(--core-purple));
-		width: 1px;
-		background-color: hsl(var(--core-purple), 30%);
+		width: 2px;
+		background: linear-gradient(
+			0deg,
+			hsl(var(--core-purple), 100%) 0%,
+			hsl(var(--core-purple), 30%) 40%,
+			hsl(var(--core-purple), 0%) 100%
+		);
 	}
 </style>
