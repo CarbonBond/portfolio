@@ -58,10 +58,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		border-radius: 0.3rem;
 		font-size: 2rem;
 		font-weight: 600;
-		box-shadow: 0 0 2px 1px hsl(var(--light-purple));
 		background-color: hsl(var(--dark-blue));
 		color: hsl(var(--light-purple));
 		transition: background-color 0.65s, box-shadow 0.75s;

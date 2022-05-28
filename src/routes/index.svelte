@@ -16,7 +16,7 @@
 		<a class="button" href="/home/about">ABOUT</a>
 		<a class="button" href="/home/projects">PROJECTS</a>
 	</nav>
-	<Rain />
+	<Rain minHeight={100} maxHeight={500} rainCounter={4} />
 	<!-- <div class="lineContainer" bind:this={lineContainer}> -->
 	<!-- 	<div class="line" bind:this={line} /> -->
 	<!-- </div> -->

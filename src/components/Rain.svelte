@@ -1,12 +1,15 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
+	export let minHeight: number;
+	export let maxHeight: number;
+	export let rainCounter: number;
 	let rainContainer: HTMLElement;
-	let rainCounter: Number = 4;
+
 	onMount(() => {
 		for (let i = 0; i < rainCounter; i++) {
 			setTimeout(() => {
-				createRainDrop(rainContainer, 100, 500);
+				createRainDrop(rainContainer, minHeight, maxHeight);
 			}, Math.random() * 4000);
 		}
 
@@ -45,7 +48,7 @@
 				if (x > node.offsetHeight) {
 					cancelAnimationFrame(frame);
 					node.removeChild(rain);
-					createRainDrop(rainContainer, 100, 500);
+					createRainDrop(rainContainer, minHeight, maxHeight);
 				} else {
 					frame = requestAnimationFrame(loop);
 				}
