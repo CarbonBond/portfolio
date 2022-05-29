@@ -129,13 +129,14 @@
 	}
 
 	.item div {
-		font-size: 10rem;
+		font-size: 8rem;
 		height: 10rem;
 		width: 10rem;
+		text-align: center;
 	}
 
 	.item p {
-		font-size: 3rem;
+		font-size: 2.2rem;
 		font-weight: 600;
 	}
 
