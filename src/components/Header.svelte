@@ -24,7 +24,7 @@
 		height: 10rem;
 		justify-content: center;
 		align-items: center;
-		grid-template-columns: minmax(10rem, 1fr) 2fr minmax(10rem, 1fr);
+		grid-template-columns: 10rem minmax(10rem, 1fr);
 	}
 
 	.logoContainer {
@@ -42,8 +42,8 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		justify-content: center;
-		grid-column: 2/3;
+		justify-content: flex-start;
+		grid-column: 2;
 	}
 
 	.link {
