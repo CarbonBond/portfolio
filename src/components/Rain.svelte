@@ -46,12 +46,16 @@
 				rain.style.transform = `translate(0,${x}px)`;
 
 				if (x > node.offsetHeight) {
-					cancelAnimationFrame(frame);
-					node.removeChild(rain);
-					createRainDrop(rainContainer, minHeight, maxHeight);
-				} else {
-					frame = requestAnimationFrame(loop);
+					x = 0 - maxHeight;
+					rain.setAttribute(
+						'style',
+						` left:${Math.random() * node.offsetWidth}px;  height: ${Math.max(
+							minHeight,
+							Math.random() * maxHeight
+						)}px; `
+					);
 				}
+				requestAnimationFrame(loop);
 			}
 		};
 	});
