@@ -1,6 +1,18 @@
+<script lang="ts">
+	import imProjects from '../../../lib/projects.js';
+	let projects: any = imProjects;
+</script>
+
 <sevlte:head>
 	<title>Projects</title>
 </sevlte:head>
 
-<a href="projects/tictactoe">TicTacToe</a>
-<a href="projects/blog">TicTacToe</a>
+{#each Object.entries(projects) as [project]}
+	<div><a href="projects/{project}">{project}</a></div>
+{/each}
+
+<style>
+	div {
+		margin: 10rem;
+	}
+</style>
