@@ -4,12 +4,13 @@
     "desc": "A basic Tic-Tac-Toe game that has AI. I used old fasion JS modules to emulate OOP. This help lower the amount of boilerplate code.",
     "github": "https://github.com/CarbonBond/tic-tac-toe",
     "iframe": true,
-    "live": "http://tictactoe.brandonburge.com",
+    "live": "https://tictactoe.brandonburge.com",
     "tools": [
       "html",
       "css",
       "javascript",
-      "docker"
+      "docker",
+      "nginx"
     ]
   },
   "blog": {
@@ -17,7 +18,7 @@
     "desc": "A blog the reaches to a Backend REST API. Uses JWT for authentication. You will find me posting about Software here!",
     "github": "https://github.com/CarbonBond/blog-frontend",
     "iframe": true,
-    "live": "http://blog.brandonburge.com",
+    "live": "https://blog.brandonburge.com",
     "tools": [
       "html",
       "css",
