@@ -86,7 +86,7 @@ Communitcation can be down with private messaging, along with chats deticated to
 
   },
   bbsurvey: {
-    name: "Brandon Brown Land Surveying",
+    name: "Brandon Land Surveying",
     desc: "A Website for a friends land surveying company. Allows for email contact using a form. There isn't a public github for this, as it is their site.",
     github: "https://github.com/CarbonBond",
     iframe: true,
