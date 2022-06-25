@@ -13,9 +13,7 @@
 		<h2 class="dev">FULL STACK DEVELOPER</h2>
 	</div>
 	<nav>
-		<a class="button" href="/home/about">ABOUT</a>
-		<a class="button" href="/home/projects">PROJECTS</a>
-		<a class="button" href="/home/skills">SKILLS</a>
+		<a class="button" href="/home/about">Enter</a>
 	</nav>
 	<Rain minHeight={100} maxHeight={500} rainCounter={4} />
 	<!-- <div class="lineContainer" bind:this={lineContainer}> -->
