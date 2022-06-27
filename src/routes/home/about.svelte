@@ -93,7 +93,7 @@
 				<h4>{skills.nodejs.name}</h4>
 			</li>
 		</div >
-		<a href="/skills" class='button' >All Skills</a>
+		<a href="/home/skills" class='button' >All Skills</a>
 	</section>
 </div>
 
