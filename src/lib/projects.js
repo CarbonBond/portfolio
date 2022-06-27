@@ -5,6 +5,8 @@ let projects = {
     github: "https://github.com/CarbonBond/tic-tac-toe",
     iframe: true,
     live: "https://tictactoe.brandonburge.com",
+    imgsrc: "/images/tictactoe.png",
+    wip: false,
     tools: [
       "html",
       "css",
@@ -21,6 +23,8 @@ CURL is avaliable on each post. You will find me posting about Software here! Bu
     github: "https://github.com/CarbonBond/blog-frontend",
     iframe: true,
     live: "https://blog.brandonburge.com",
+    imgsrc: "/images/blog.png",
+    wip: true,
     tools: [
       "html",
       "css",
@@ -38,6 +42,8 @@ CURL is avaliable on each post. You will find me posting about Software here! Bu
     github: "https://github.com/CarbonBond/Blog-Backend",
     iframe: false,
     live: "https://blog.brandonburge.com",
+    imgsrc: "/images/blog-api.png",
+    wip: false,
     tools: [
       "html",
       "css",
@@ -56,6 +62,8 @@ CURL is avaliable on each post. You will find me posting about Software here! Bu
     github: "https://github.com/CarbonBond/Tweetor",
     iframe: true,
     live: "https://tweetor.brandonburge.com",
+    imgsrc: "/images/tweetor.png",
+    wip: false,
     tools: [
       "html",
       "css",
@@ -74,6 +82,8 @@ Communitcation can be down with private messaging, along with chats deticated to
     github: "https://github.com/CarbonBond/theWIkiPage",
     iframe: false,
     live: "https://thewiki.page",
+    imgsrc: "/images/thewikipage.png",
+    wip: true,
     tools: [
       "html",
       "css",
@@ -91,6 +101,8 @@ Communitcation can be down with private messaging, along with chats deticated to
     github: "https://github.com/CarbonBond",
     iframe: true,
     live: "https://bb.wickedvoid.com",
+    imgsrc: "/images/bbsurvey.png",
+    wip: false,
     tools: [
       "html",
       "css",
@@ -106,6 +118,8 @@ Communitcation can be down with private messaging, along with chats deticated to
     github: "https://github.com/CarbonBond/Etch-a-Sketch",
     iframe: true,
     live: "https://sketch.brandonburge.com",
+    imgsrc: "/images/sketch.png",
+    wip: false,
     tools: [
       "html",
       "css",
@@ -114,7 +128,24 @@ Communitcation can be down with private messaging, along with chats deticated to
       "nginx"
     ]
   },
+  resume: {
+    name: "Resume",
+    desc: "A website that hosts a resume",
+    github: "https://github.com/CarbonBond/resume",
+    iframe: true,
+    live: "https://resume.brandonburge.com",
+    imgsrc: "/images/resume.png",
+    wip: false,
+    tools: [
+      "html",
+      "css",
+      "docker",
+      "nginx"
+    ]
+  },
 
+
+  
 
 }
 
