@@ -49,51 +49,79 @@
 
 	<section class="skills">
 		<h3>Skills</h3>
-		<div class="skill">
-			<li>
-				<div class="svg">
-					{@html skills.html.svg}
+		<div class="webskill">
+			<article class="skill">
+				<h4>Structure</h4>
+				<div class="imgGroup">
+					<div class="imgContainer">
+						<div class="svg">
+							{@html skills.html.svg}
+						</div>
+						<h4>{skills.html.name}</h4>
+					</div>
+					<div class="imgContainer">
+						<div class="svg">
+							{@html skills.css.svg}
+						</div>
+						<h4>{skills.css.name}</h4>
+					</div>
 				</div>
-				<h4>{skills.html.name}</h4>
-			</li>
-			<li>
-				<div class="svg">
-					{@html skills.css.svg}
+				<p>
+					HTML5 and CSS3 are the structure and style that power the web. They are the core of every
+					website.
+				</p>
+			</article>
+			<article class="skill">
+				<h4>Front-End</h4>
+				<div class="imgGroup">
+					<div class="imgContainer">
+						<div class="svg">
+							{@html skills.javascript.svg}
+						</div>
+						<h4>{skills.javascript.name}</h4>
+					</div>
+					<div class="imgContainer">
+						<div class="svg">
+							{@html skills.react.svg}
+						</div>
+						<h4>{skills.react.name}</h4>
+					</div>
 				</div>
-				<h4>{skills.css.name}</h4>
-			</li>
-			<li>
-				<div class="svg">
-					{@html skills.typescript.svg}
+				<p>
+					Javascript and React give powerfull interactivity to websites. I use this to power up my
+					websites to another level.
+				</p>
+			</article>
+			<article class="skill">
+				<h4>Back-End</h4>
+				<div class="imgGroup">
+					<div class="imgContainer">
+						<div class="svg">
+							{@html skills.mongodb.svg}
+						</div>
+						<h4>{skills.mongodb.name}</h4>
+					</div>
+					<div class="imgContainer">
+						<div class="svg">
+							{@html skills.express.svg}
+						</div>
+						<h4>{skills.express.name}</h4>
+					</div>
+					<div class="imgContainer">
+						<div class="svg">
+							{@html skills.nodejs.svg}
+						</div>
+						<h4>{skills.nodejs.name}</h4>
+					</div>
 				</div>
-				<h4>{skills.typescript.name}</h4>
-			</li>
-			<li>
-				<div class="svg">
-					{@html skills.react.svg}
-				</div>
-				<h4>{skills.react.name}</h4>
-			</li>
-			<li>
-				<div class="svg">
-					{@html skills.mongodb.svg}
-				</div>
-				<h4>{skills.mongodb.name}</h4>
-			</li>
-			<li>
-				<div class="svg">
-					{@html skills.express.svg}
-				</div>
-				<h4>{skills.express.name}</h4>
-			</li>
-			<li>
-				<div class="svg">
-					{@html skills.nodejs.svg}
-				</div>
-				<h4>{skills.nodejs.name}</h4>
-			</li>
-		</div >
-		<a href="/home/skills" class='button' >All Skills</a>
+				<p>
+					Completing the MERN stack, we have MongoDB, Express, and Nodejs for backends. MongoDB is a
+					simple and managable document database. Express runs on Node to provide a backend server,
+					sending the HTML or API information we need.
+				</p>
+			</article>
+		</div>
+		<a href="/home/skills" class="button">All Skills</a>
 	</section>
 </div>
 
@@ -131,31 +159,52 @@
 	.skills {
 		flex-direction: column;
 		align-items: center;
+		justify-content: flex-start;
 
-    h3 {
-      font-size: 4rem;
-      margin-bottom: 4rem;
-    }
-		div {
-			display: flex;
-			flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-		}
-		li {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			margin: 25px;
+		h3 {
+			font-size: 4rem;
+			margin-bottom: 4rem;
 		}
 		.button {
 			font-size: 25px;
 			font-weight: bold;
-      flex-grow: 0;
-      padding: 25px;
-      max-height: 30px;
+			flex-grow: 0;
+			padding: 25px;
+			max-height: 30px;
 		}
+	}
+
+	.webskill {
+		display: flex;
+    align-items: center;
+    justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.skill {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		margin: 50px;
+    h4 {
+      font-size: 22px;
+    }
+		p {
+      text-align: center;
+			max-width: 40ch;
+		}
+	}
+
+	.imgGroup {
+		display: flex;
+		margin: 20px;
+	}
+
+	.imgContainer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.description {
