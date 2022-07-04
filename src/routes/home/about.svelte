@@ -121,7 +121,7 @@
 				</p>
 			</article>
 		</div>
-		<a href="/home/skills" class="button">All Skills</a>
+		<div class="buttonArea"><a href="/home/skills" class="button">All Skills</a></div>
 	</section>
 </div>
 
@@ -130,6 +130,7 @@
 		width: 100%;
 		display: flex;
 		flex-direction: column;
+		padding-bottom: 30px;
 		section {
 			height: 100vh;
 			display: flex;
@@ -160,17 +161,22 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-start;
-
 		.title {
 			font-size: 4rem;
 			margin-bottom: 4rem;
 		}
-		.button {
-			font-size: 25px;
-			font-weight: bold;
-			flex-grow: 0;
-			padding: 25px;
-			max-height: 30px;
+		.buttonArea {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 10rem;
+			.button {
+				font-size: 25px;
+				font-weight: bold;
+				padding: 25px;
+				max-height: 30px;
+			}
 		}
 	}
 
@@ -179,28 +185,28 @@
 		align-items: center;
 		justify-content: center;
 		flex-wrap: wrap;
-    margin-bottom: 20rem;
+		margin-bottom: 20rem;
 	}
 
 	.skill {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 6fr 4fr;
-    height: 25rem;
+		height: 25rem;
 		margin: 50px;
 		h3 {
 			font-size: 26px;
-      align-self:flex-end;
+			align-self: flex-end;
 			text-align: center;
 			grid-area: 1 / 1 / 2 / 2;
 		}
 		.imgGroup {
 			display: flex;
 			margin: 20px;
-      grid-area: 2 / 1 / 3 / 2;
-      margin: 4rem 0;
-      align-items: center;
-      justify-content: center;
+			grid-area: 2 / 1 / 3 / 2;
+			margin: 4rem 0;
+			align-items: center;
+			justify-content: center;
 		}
 		p {
 			grid-area: 3 / 1 / 4 / 2;
@@ -231,5 +237,11 @@
 		height: 10rem;
 		width: 10rem;
 		text-align: center;
+	}
+
+	@media screen and (max-width: 500px) {
+		.container {
+			padding: 0 20px;
+		}
 	}
 </style>
