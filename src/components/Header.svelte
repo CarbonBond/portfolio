@@ -48,8 +48,8 @@
 
 	.link {
 		max-width: 15rem;
-		width: 10rem;
-		flex: 1 0 10rem;
+		min-width: 7rem;
+    flex: 1 1 auto;
 		margin: 0.5rem 3rem;
 
 		text-align: center;
@@ -71,4 +71,14 @@
 	.link:active {
 		background-color: hsl(var(--core-purple), 50%);
 	}
+  @media screen and (max-width:500px){
+    .header>nav {
+      grid-template-columns: 8rem minmax(10rem, 1fr);
+    }
+    .link {
+      min-width: 4ch;
+      padding: 0.5rem 0;
+      margin: 0;
+    }
+  }
 </style>
