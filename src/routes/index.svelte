@@ -12,7 +12,7 @@
 		<h1 class="name">BRANDON BURGE</h1>
 		<h2 class="dev">FULL STACK DEVELOPER</h2>
 	</div>
-	<nav>
+	<nav class="nav">
 		<a class="button" href="/home/about">Enter</a>
 	</nav>
 	<Rain minHeight={100} maxHeight={500} rainCounter={4} />
@@ -22,6 +22,8 @@
 </div>
 
 <style>
+
+
 	.wrapper {
 		display: grid;
 		width: 100%;
@@ -75,7 +77,6 @@
 		justify-content: center;
 		align-items: center;
 		border-radius: 0.3rem;
-		margin: 0 4rem 1rem 0;
 		font-size: 2.5rem;
 		font-weight: 600;
 		box-shadow: 0 0 2px 1px hsl(var(--light-purple));
@@ -90,4 +91,24 @@
 	.button:active {
 		background-color: hsl(var(--core-purple), 50%);
 	}
+
+  @media screen and (max-width:500px) {
+    .title {
+      grid-column: 2/3;
+      grid-row: 2/4;
+    }
+    .title>h2{
+      text-align: center;
+    }
+    .name {
+      text-align: center;
+      font-size: 6rem;
+      margin-bottom: 4rem;
+    }
+
+    .nav{
+      grid-column: 2/3;
+      justify-content: center;
+    }
+  }
 </style>
