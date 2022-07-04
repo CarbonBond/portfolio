@@ -48,10 +48,10 @@
 	</section>
 
 	<section class="skills">
-		<h3>Skills</h3>
+		<h3 class="title">Skills</h3>
 		<div class="webskill">
 			<article class="skill">
-				<h4>Structure</h4>
+				<h3>Structure</h3>
 				<div class="imgGroup">
 					<div class="imgContainer">
 						<div class="svg">
@@ -72,7 +72,7 @@
 				</p>
 			</article>
 			<article class="skill">
-				<h4>Front-End</h4>
+				<h3>Front-End</h3>
 				<div class="imgGroup">
 					<div class="imgContainer">
 						<div class="svg">
@@ -93,7 +93,7 @@
 				</p>
 			</article>
 			<article class="skill">
-				<h4>Back-End</h4>
+				<h3>Back-End</h3>
 				<div class="imgGroup">
 					<div class="imgContainer">
 						<div class="svg">
@@ -161,7 +161,7 @@
 		align-items: center;
 		justify-content: flex-start;
 
-		h3 {
+		.title {
 			font-size: 4rem;
 			margin-bottom: 4rem;
 		}
@@ -176,28 +176,37 @@
 
 	.webskill {
 		display: flex;
-    align-items: center;
-    justify-content: center;
+		align-items: center;
+		justify-content: center;
 		flex-wrap: wrap;
+    margin-bottom: 20rem;
 	}
 
 	.skill {
-		align-items: center;
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 6fr 4fr;
+    height: 25rem;
 		margin: 50px;
-    h4 {
-      font-size: 22px;
-    }
+		h3 {
+			font-size: 26px;
+      align-self:flex-end;
+			text-align: center;
+			grid-area: 1 / 1 / 2 / 2;
+		}
+		.imgGroup {
+			display: flex;
+			margin: 20px;
+      grid-area: 2 / 1 / 3 / 2;
+      margin: 4rem 0;
+      align-items: center;
+      justify-content: center;
+		}
 		p {
-      text-align: center;
+			grid-area: 3 / 1 / 4 / 2;
+			text-align: center;
 			max-width: 40ch;
 		}
-	}
-
-	.imgGroup {
-		display: flex;
-		margin: 20px;
 	}
 
 	.imgContainer {
