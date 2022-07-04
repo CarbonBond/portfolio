@@ -55,4 +55,12 @@
 		justify-content: center;
 		padding: 0 15%;
 	}
+  @media screen and (max-width: 500px) {
+    .item{
+      padding: 2rem 3rem;
+    }
+    .skill{
+      padding: 0 0;
+    }
+  }
 </style>
