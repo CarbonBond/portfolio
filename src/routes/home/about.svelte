@@ -278,8 +278,19 @@
 		}
 
 		.project {
+      padding: 0 1rem;
+
+      .main {
+        a {
+          width: 90%;
+        }
+      }
 			.other {
 				flex-direction: column;
+        align-items: center;
+        a {
+          width: 80%;
+        }
 			}
 		}
 
