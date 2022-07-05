@@ -83,7 +83,7 @@
 	{/if}
 </div>
 
-<style lang="scss">
+<style >
 	.container {
 		display: grid;
 		justify-content: center;
@@ -165,11 +165,11 @@
     .skills {
       grid-area: 3/1/4/5;
 
+    }
+
       .item {
         padding: 2rem 2rem;
       }
-    }
-
     .frame {
       display: none;
     }
