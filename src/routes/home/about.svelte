@@ -145,7 +145,7 @@
 	.project {
 		flex-direction: column;
 		align-items: center;
-
+    padding: 0 20rem;
 		.main {
 			display: flex;
 			flex-direction: column;
@@ -154,6 +154,14 @@
 			* {
 				margin: 1rem 0;
 			}
+
+      a {
+        width: 50%;
+
+        img{
+          object-fit: cover;
+        }
+      }
 
 			p {
 				text-align: justify;
@@ -165,10 +173,19 @@
 		.other {
 			display: flex;
 			justify-content: space-evenly;
-
+      width: 100%;
 			a {
 				margin: 10px;
+        max-width: 400px;
+        max-height: 240px;
 			}
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+
 		}
 	}
 
@@ -198,8 +215,9 @@
 	.webskill {
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-around;
 		flex-wrap: wrap;
+    width: 80%;
 	}
 
 	.skill {
