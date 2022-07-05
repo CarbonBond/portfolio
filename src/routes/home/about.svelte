@@ -10,11 +10,14 @@
 <div class="container">
 	<section class="intro">
 		<article class="description">
-			<h3>Who am I?</h3>
+			<h3>Hi, I'm Brandon.</h3>
 			<p>
-				I'm Brandon, a software engineer that is currently focusing on full-stack web development.
-				The tech I work with is either Sveltekit + prima w/ sql or MERN (MongoDB, Express, React,
-				Node).
+				I began my journey with code 12 years ago by modding minecraft. This led to C++ terminal
+				games and Python automation. Soon I needed a website, and so my Web Development began.
+        <br><br>
+				Currently my focus resides here, with the MERN stack (MongoDB, Express, React, Node). When
+				not needing a backend, I use NGINX to power my sites. All of these are run in Docker
+				containers to speed up development.
 			</p>
 		</article>
 		<img src="" alt="" />
@@ -115,9 +118,7 @@
 					</div>
 				</div>
 				<p>
-					Completing the MERN stack, we have MongoDB, Express, and Nodejs for backends. MongoDB is a
-					simple and managable document database. Express runs on Node to provide a backend server,
-					sending the HTML or API information we need.
+					Completing the MERN stack, we have MongoDB as the Databse, and Nodejs w/ Express for backends.
 				</p>
 			</article>
 		</div>
@@ -138,9 +139,8 @@
 	}
 
 	.intro {
-		flex-wrap: wrap-reverse;
 		justify-content: space-evenly;
-		align-items: flex-end;
+		align-items: flex-start;
 	}
 
 	.project {
@@ -166,11 +166,11 @@
 			margin-bottom: 4rem;
 		}
 		.buttonArea {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-bottom: 10rem;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding-bottom: 10rem;
 			.button {
 				font-size: 25px;
 				font-weight: bold;
@@ -193,7 +193,7 @@
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 6fr 4fr;
 		height: 25rem;
-		margin: 50px;
+		margin: 70px 0;
 		h3 {
 			font-size: 26px;
 			align-self: flex-end;
@@ -206,7 +206,7 @@
 			grid-area: 2 / 1 / 3 / 2;
 			margin: 4rem 0;
 			align-items: center;
-			justify-content: center;
+			justify-content: space-around;
 		}
 		p {
 			grid-area: 3 / 1 / 4 / 2;
@@ -220,6 +220,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+    margin: 5px;
 	}
 
 	.description {
