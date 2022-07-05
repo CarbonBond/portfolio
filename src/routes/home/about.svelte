@@ -14,40 +14,38 @@
 			<p>
 				I began my journey with code 12 years ago by modding minecraft. This led to C++ terminal
 				games and Python automation. Soon I needed a website, and so my Web Development began.
-        <br><br>
-				Currently my focus resides here, with the MERN stack (MongoDB, Express, React, Node). When
-				not needing a backend, I use NGINX to power my sites. All of these are run in Docker
-				containers to speed up development.
+				<br /><br />
+				Currently my focus resides here, with the MERN stack (MongoDB, Express, React, Node). When not
+				needing a backend, I use NGINX to power my sites. All of these are run in Docker containers to
+				speed up development.
 			</p>
 		</article>
-		<img src="" alt="" />
+		<img src="" alt="" class="picture" />
 	</section>
 
 	<section class="project">
 		<div class="main">
-			<h2>8-Bit breadboard PC</h2>
-			<img src="" alt="" class="8bit" />
+			<h2>Brandon Brown Land Surveying</h2>
+			<a href="/home/projects/bbsurvey"><img src="/images/bbsurvey.png" alt="" class="8bit" /> </a>
 			<nav class="links"><a href="" class="Github" /><a href="" class="Live" /></nav>
+			<p />
 		</div>
 		<div class="other">
 			<a href="/home/projects/codeproblem">
-				<h4>CodeProblem.Page</h4>
-				<img src="" alt="" />
-			</a>
-			<a href="/home/projects/sketch">
 				<h4>Sketch-n-Etch</h4>
-				<img src="" alt="" />
-			</a>
-			<a href="/home/projects/bbsurvey">
-				<h4>Brandon Brown Land Surveying</h4>
-				<img src="" alt="" />
+				<img src="/images/sketch.png" alt="" />
 			</a>
 			<a href="/home/projects/tweetor">
 				<h4>Tweetor</h4>
-				<img src="" alt="" />
+				<img src="/images/tweetor.png" alt="" />
 				<p />
 			</a>
+			<a href="/home/projects/resume">
+				<h4>Resume</h4>
+				<img src="/images/resume.png" alt="" />
+			</a>
 		</div>
+		<div class="buttonArea"><a href="/home/skills" class="button">See More</a></div>
 	</section>
 
 	<section class="skills">
@@ -118,7 +116,8 @@
 					</div>
 				</div>
 				<p>
-					Completing the MERN stack, we have MongoDB as the Databse, and Nodejs w/ Express for backends.
+					Completing the MERN stack, we have MongoDB as the Databse, and Nodejs w/ Express for
+					backends.
 				</p>
 			</article>
 		</div>
@@ -133,8 +132,8 @@
 		flex-direction: column;
 		padding-bottom: 30px;
 		section {
-			height: 100vh;
 			display: flex;
+			margin-bottom: 20rem;
 		}
 	}
 
@@ -146,6 +145,22 @@
 	.project {
 		flex-direction: column;
 		align-items: center;
+
+		.main {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			* {
+				margin: 1rem 0;
+			}
+
+			p {
+				text-align: justify;
+				min-width: 25ch;
+				margin-bottom: 5rem;
+			}
+		}
 
 		.other {
 			display: flex;
@@ -165,27 +180,26 @@
 			font-size: 4rem;
 			margin-bottom: 4rem;
 		}
-		.buttonArea {
-			width: 100%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			padding-bottom: 10rem;
-			.button {
-				font-size: 25px;
-				font-weight: bold;
-				padding: 25px;
-				max-height: 30px;
-			}
-		}
 	}
 
+	.buttonArea {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 5rem;
+		.button {
+			font-size: 25px;
+			font-weight: bold;
+			padding: 25px;
+			max-height: 30px;
+		}
+	}
 	.webskill {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-wrap: wrap;
-		margin-bottom: 20rem;
 	}
 
 	.skill {
@@ -220,7 +234,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-    margin: 5px;
+		margin: 5px;
 	}
 
 	.description {
@@ -241,8 +255,20 @@
 	}
 
 	@media screen and (max-width: 500px) {
-		.container {
-			padding: 0 20px;
+		.picture {
+			display: none;
 		}
+
+		.project {
+			.other {
+				flex-direction: column;
+			}
+		}
+
+    .description {
+      p {
+        max-width: 30ch;
+      }
+    }
 	}
 </style>
