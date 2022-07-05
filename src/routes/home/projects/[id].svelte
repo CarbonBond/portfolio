@@ -83,7 +83,7 @@
 	{/if}
 </div>
 
-<style>
+<style lang="scss">
 	.container {
 		display: grid;
 		justify-content: center;
@@ -153,7 +153,25 @@
 		grid-area: 2 / 2 / 3 /4;
 		font-size: 2rem;
 		width: 50%;
+    min-width: 30ch;
 		justify-self: center;
 		margin: 5rem;
+	}
+	@media screen and (max-width: 500px) {
+		.head > h2 {
+			font-size: 3em;
+		}
+
+    .skills {
+      grid-area: 3/1/4/5;
+
+      .item {
+        padding: 2rem 2rem;
+      }
+    }
+
+    frame {
+      display: none;
+    }
 	}
 </style>
