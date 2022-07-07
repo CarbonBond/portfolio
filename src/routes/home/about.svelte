@@ -24,6 +24,7 @@
 	</section>
 
 	<section class="project">
+    <h3>Projects</h3>
 		<div class="main">
 			<h2>Brandon Brown Land Surveying</h2>
 			<a href="/home/projects/bbsurvey"><img src="/images/bbsurvey.png" alt="" class="8bit" /> </a>
@@ -133,19 +134,24 @@
 		padding-bottom: 30px;
 		section {
 			display: flex;
-			margin-bottom: 20rem;
+			margin-bottom: 60rem;
 		}
 	}
 
 	.intro {
 		justify-content: space-evenly;
-		align-items: flex-start;
+		align-items: center;
+    padding-top: 4rem;
 	}
 
 	.project {
 		flex-direction: column;
 		align-items: center;
-    padding: 0 20rem;
+		padding: 0 20rem;
+    h3 {
+      font-size: 4rem;
+      margin-bottom: 2rem;
+    }
 		.main {
 			display: flex;
 			flex-direction: column;
@@ -155,13 +161,13 @@
 				margin: 1rem 0;
 			}
 
-      a {
-        width: 50%;
+			a {
+				width: 50%;
 
-        img{
-          object-fit: cover;
-        }
-      }
+				img {
+					object-fit: cover;
+				}
+			}
 
 			p {
 				text-align: justify;
@@ -173,19 +179,18 @@
 		.other {
 			display: flex;
 			justify-content: space-evenly;
-      width: 100%;
+			width: 100%;
 			a {
 				margin: 10px;
-        max-width: 400px;
-        max-height: 240px;
+				max-width: 400px;
+				max-height: 240px;
 			}
 
-      img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-      }
-
+			img {
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+			}
 		}
 	}
 
@@ -193,6 +198,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-start;
+    margin-bottom: 20rem !important;
 		.title {
 			font-size: 4rem;
 			margin-bottom: 4rem;
@@ -217,7 +223,7 @@
 		align-items: center;
 		justify-content: space-around;
 		flex-wrap: wrap;
-    width: 80%;
+		width: 80%;
 	}
 
 	.skill {
@@ -272,32 +278,34 @@
 		text-align: center;
 	}
 
+	
+
 	@media screen and (max-width: 500px) {
 		.picture {
 			display: none;
 		}
 
 		.project {
-      padding: 0 1rem;
+			padding: 0 1rem;
 
-      .main {
-        a {
-          width: 90%;
-        }
-      }
+			.main {
+				a {
+					width: 90%;
+				}
+			}
 			.other {
 				flex-direction: column;
-        align-items: center;
-        a {
-          width: 80%;
-        }
+				align-items: center;
+				a {
+					width: 80%;
+				}
 			}
 		}
 
-    .description {
-      p {
-        max-width: 30ch;
-      }
-    }
+		.description {
+			p {
+				max-width: 30ch;
+			}
+		}
 	}
 </style>
