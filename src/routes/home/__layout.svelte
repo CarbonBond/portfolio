@@ -8,7 +8,7 @@
 <slot />
 
 <div class="rainContainer">
-	<Rain minHeight={100} maxHeight={500} rainCounter={4} />
+	<Rain minHeight={100} maxHeight={500} rainCounter={6} />
 </div>
 
 <style>
