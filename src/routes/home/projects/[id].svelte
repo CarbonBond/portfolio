@@ -10,6 +10,7 @@
 		desc: string;
 		iframe: Boolean;
 		live: string;
+    imgsrc: string;
 		github: string;
 		tools: string[];
 	};
@@ -26,6 +27,8 @@
 			<h2>{project.name}</h2>
 			{#if project.iframe}
 				<iframe src={project.live} title={projects.name} class="frame" frameborder="0" />
+      {:else}
+        <img src={project.imgsrc} alt="pong">;
 			{/if}
 			<div class="iconContainer">
 				<div class="icon">

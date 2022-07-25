@@ -19,7 +19,7 @@ let projects = {
     name: "Pong",
     desc: "Its Pong! A game with a ball and two paddles. This version is created using C++ with SDL for grapgics. It can be compiled to emscripten, which is why you can play the game on the web. Font doesn't work on emscripten compiling, but you can still enjoy the game! As you play, the AI paddle difficulty will increase/decrease based on your skills.",
     github: "https://github.com/CarbonBond/tic-tac-toe",
-    iframe: true,
+    iframe: false,
     live: "https://pong.brandonburge.com",
     imgsrc: "/images/pong.png",
     wip: false,
@@ -29,7 +29,7 @@ let projects = {
       "javascript",
       "docker",
       "nginx",
-      "cpp"
+      "cplusplus"
     ]
   },
   blog: {
