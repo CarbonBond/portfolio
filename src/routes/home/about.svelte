@@ -133,8 +133,9 @@
 		flex-direction: column;
 		padding-bottom: 30px;
 		section {
+      min-height: 85vh;
 			display: flex;
-			margin-bottom: 60rem;
+			margin-bottom: 30rem;
 		}
 	}
 
@@ -198,7 +199,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-start;
-    margin-bottom: 20rem !important;
+    margin-bottom: 0px !important;
 		.title {
 			font-size: 4rem;
 			margin-bottom: 4rem;
