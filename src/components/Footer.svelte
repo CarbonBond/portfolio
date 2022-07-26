@@ -6,15 +6,15 @@
 	</nav>
 </div>
 
-<style lang="scss">
+<style >
 	.footer { 
     position: relative;
     bottom:0;
     height: 12rem;
     width: 100%;
     display: grid;
-    border-top: 2px solid hsl(var(--core-purple));
-    background-color: hsl(var(--dark-blue));
+    border-top: 2px solid hsl(var(--core-purple), 100%);
+    background-color: hsl(var(--dark-blue), 100%);
 	}
 
 	.linkContainer {
