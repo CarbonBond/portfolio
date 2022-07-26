@@ -24,12 +24,13 @@
 	</section>
 
 	<section class="project">
-    <h3>Projects</h3>
+		<h3>Projects</h3>
 		<div class="main">
-			<h2>Brandon Brown Land Surveying</h2>
-			<a href="/home/projects/bbsurvey"><img src="/images/bbsurvey.png" alt="" class="8bit" /> </a>
-			<nav class="links"><a href="" class="Github" /><a href="" class="Live" /></nav>
-			<p />
+			<a href="/home/projects/tweetor">
+				<h2>Tweetor</h2>
+				<img src="/images/tweetor.png" alt="" />
+				<p />
+			</a>
 		</div>
 		<div class="other">
 			<a href="/home/projects/codeproblem">
@@ -37,13 +38,13 @@
 				<img src="/images/sketch.png" alt="" />
 			</a>
 			<a href="/home/projects/tweetor">
-				<h4>Tweetor</h4>
-				<img src="/images/tweetor.png" alt="" />
+				<h4>Brandon Brown Land Surveying</h4>
+				<img src="/images/bbsurvey.png" alt="" class="8bit" />
 				<p />
 			</a>
-			<a href="/home/projects/resume">
-				<h4>Resume</h4>
-				<img src="/images/resume.png" alt="" />
+			<a href="/home/projects/pong">
+				<h4>Pong</h4>
+				<img src="/images/pong.png" alt="" />
 			</a>
 		</div>
 		<div class="buttonArea"><a href="/home/skills" class="button">See More</a></div>
@@ -133,7 +134,7 @@
 		flex-direction: column;
 		padding-bottom: 30px;
 		section {
-      min-height: 85vh;
+			min-height: 85vh;
 			display: flex;
 			margin-bottom: 30rem;
 		}
@@ -142,16 +143,35 @@
 	.intro {
 		justify-content: space-evenly;
 		align-items: center;
-    padding-top: 4rem;
+		padding-top: 4rem;
 	}
 
 	.project {
 		flex-direction: column;
 		align-items: center;
-		padding: 0 20rem;
-    h3 {
-      font-size: 4rem;
-      margin-bottom: 2rem;
+		margin: 20rem 0;
+    margin: auto;
+
+		h3 {
+			font-size: 5rem;
+			margin-bottom: 4rem;
+		}
+
+		h2 {
+			font-size: 4rem;
+			margin-bottom: 2rem;
+		}
+		h4 {
+			font-size: 2.5rem;
+      overflow: none;
+		}
+		h2,
+		h4 {
+			text-align: center;
+		}
+    img:hover {
+
+      border: 2px solid hsl(var(--core-purple));
     }
 		.main {
 			display: flex;
@@ -163,7 +183,7 @@
 			}
 
 			a {
-				width: 50%;
+				width: 100%;
 
 				img {
 					object-fit: cover;
@@ -180,17 +200,20 @@
 		.other {
 			display: flex;
 			justify-content: space-evenly;
+      flex-wrap: wrap;
 			width: 100%;
+
 			a {
 				margin: 10px;
-				max-width: 400px;
-				max-height: 240px;
-			}
+				max-width: 360px;
+				max-height: 220px;
 
-			img {
-				object-fit: cover;
-				width: 100%;
-				height: 100%;
+        margin: 4rem;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
 			}
 		}
 	}
@@ -199,7 +222,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-start;
-    margin-bottom: 0px !important;
+		margin-bottom: 0px !important;
 		.title {
 			font-size: 4rem;
 			margin-bottom: 4rem;
@@ -219,6 +242,7 @@
 			max-height: 30px;
 		}
 	}
+
 	.webskill {
 		display: flex;
 		align-items: center;
@@ -278,8 +302,6 @@
 		width: 10rem;
 		text-align: center;
 	}
-
-	
 
 	@media screen and (max-width: 500px) {
 		.picture {
