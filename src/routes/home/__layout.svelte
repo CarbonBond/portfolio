@@ -2,6 +2,7 @@
 	import '../../styles/global.css';
 	import Header from '../../components/Header.svelte';
 	import Rain from '../../components/Rain.svelte';
+  import Footer from '../../components/Footer.svelte';
 </script>
 
 <Header />
@@ -10,7 +11,7 @@
 <div class="rainContainer">
 	<Rain minHeight={100} maxHeight={500} rainCounter={6} />
 </div>
-
+<Footer />
 <style>
 	.rainContainer {
 		position: absolute;
