@@ -28,7 +28,7 @@
 			{#if project.iframe}
 				<iframe src={project.live} title={projects.name} class="frame" frameborder="0" />
       {:else}
-        <img src={project.imgsrc} alt="pong">;
+        <img src={project.imgsrc} alt="pong">
 			{/if}
 			<div class="iconContainer">
 				<div class="icon">
