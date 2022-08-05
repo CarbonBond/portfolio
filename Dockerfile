@@ -1,4 +1,4 @@
-FROM node:18-alpine3.14  AS builder
+FROM node:latest AS builder
 
 WORKDIR /app
 
@@ -6,7 +6,9 @@ COPY package*.json ./
 
 COPY . .
 
-RUN npm ci
+RUN apt-get update || : && apt-get install python -y
+
+RUN npm ci && npm i -D node-sass
 
 RUN npm run build && npm prune --production
 

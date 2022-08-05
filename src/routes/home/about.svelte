@@ -33,11 +33,11 @@
 			</a>
 		</div>
 		<div class="other">
-			<a href="/home/projects/codeproblem">
+			<a href="/home/projects/sketch">
 				<h4>Sketch-n-Etch</h4>
 				<img src="/images/sketch.png" alt="" />
 			</a>
-			<a href="/home/projects/tweetor">
+			<a href="/home/projects/bbsurvey">
 				<h4>Brandon Brown Land Surveying</h4>
 				<img src="/images/bbsurvey.png" alt="" class="8bit" />
 				<p />
@@ -171,7 +171,7 @@
 		}
     img:hover {
 
-      border: 2px solid hsl(var(--core-purple));
+      border: 2px solid hsl(270, 100%, 36%);
     }
 		.main {
 			display: flex;
