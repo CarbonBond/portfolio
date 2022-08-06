@@ -15,6 +15,7 @@
     display: grid;
     border-top: 2px solid hsl(var(--core-purple), 100%);
     background-color: hsl(var(--dark-blue), 100%);
+    flex: 0 0 auto;
 	}
 
 	.linkContainer {
