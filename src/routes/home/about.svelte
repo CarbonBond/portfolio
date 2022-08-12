@@ -12,15 +12,16 @@
 		<article class="description">
 			<h3>Hi, I'm Brandon.</h3>
 			<p>
-				I began my journey with code 12 years ago by modding minecraft. This led to C++ terminal
-				games and Python automation. Soon I needed a website, and so my Web Development began.
-				<br /><br />
-				Currently my focus resides here, with the MERN stack (MongoDB, Express, React, Node). When not
-				needing a backend, I use NGINX to power my sites. All of these are run in Docker containers to
-				speed up development.
+				I'm a multifaceted person when it comes to software development. From modding games with
+				lua, to styling websites with SCSS. I have a wide amount of skills and am always ready and
+				wanting to learns more.
+				<br />
+				<br />
+				I currently focus on web development with Front-End apps using React or Svelte. The Back-End
+				servers use Nodejs or Go. As for databases, I use mongoDB or Prisma as a ORM for sql.
 			</p>
 		</article>
-		<img src="" alt="" class="picture" />
+		<img src="/images/ProPic.png" alt="Brandon B" class="picture" />
 	</section>
 
 	<section class="project">
@@ -143,14 +144,21 @@
 	.intro {
 		justify-content: space-evenly;
 		align-items: center;
-		padding-top: 4rem;
+		padding: 4rem;
+		flex-wrap: wrap-reverse;
+
+		img {
+			flex: 1 1 auto;
+			max-width: 90ch;
+			padding: 1em;
+		}
 	}
 
 	.project {
 		flex-direction: column;
 		align-items: center;
 		margin: 20rem 0;
-    margin: auto;
+		margin: auto;
 
 		h3 {
 			font-size: 5rem;
@@ -163,16 +171,15 @@
 		}
 		h4 {
 			font-size: 2.5rem;
-      overflow: none;
+			overflow: none;
 		}
 		h2,
 		h4 {
 			text-align: center;
 		}
-    img:hover {
-
-      border: 2px solid hsl(270, 100%, 36%);
-    }
+		img:hover {
+			border: 2px solid hsl(270, 100%, 36%);
+		}
 		.main {
 			display: flex;
 			flex-direction: column;
@@ -200,7 +207,7 @@
 		.other {
 			display: flex;
 			justify-content: space-evenly;
-      flex-wrap: wrap;
+			flex-wrap: wrap;
 			width: 100%;
 
 			a {
@@ -208,12 +215,12 @@
 				max-width: 360px;
 				max-height: 220px;
 
-        margin: 4rem;
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
+				margin: 4rem;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
 			}
 		}
 	}
@@ -287,12 +294,13 @@
 	}
 
 	.description {
-		max-width: 70ch;
+		min-width: 40ch;
+		max-width: 90ch;
 		h3 {
-			font-size: 3rem;
+			font-size: 4.5rem;
 		}
 		p {
-			font-size: 2rem;
+			font-size: 2.5rem;
 		}
 	}
 
@@ -303,7 +311,7 @@
 		text-align: center;
 	}
 
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 700px) {
 		.picture {
 			display: none;
 		}
