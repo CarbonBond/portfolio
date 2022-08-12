@@ -50,11 +50,13 @@
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    max-width: 100vw;
   }
 
   h4 {
     margin-bottom: 1.2em;
     font-size: 3em;
+    padding-bottom: solid 1px white;
  }
 
   .desc {
