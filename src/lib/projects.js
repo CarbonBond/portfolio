@@ -39,9 +39,9 @@ let projects = {
 CURL is avaliable on each post. You will find me posting about Software here! Build using functional React, along with a search system.`,
     github: "https://github.com/CarbonBond/blog-frontend",
     iframe: true,
-    live: "https://blog.brandonburge.com",
+    live: "https://blog.brandonburge.com/posts",
     imgsrc: "/images/blog.png",
-    wip: true,
+    wip: false,
     tools: [
       "html",
       "css",
