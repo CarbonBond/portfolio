@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import imProjects from '../../../lib/projects.js';
 	import skill from '../../../lib/skills';
+  import Skill from '../../../components/skill/Skill.svelte'
 
 	let skills: any = skill;
 	let projects: any = imProjects;
@@ -76,8 +77,7 @@
 		<div class="skills">
 			{#each project.tools as tool}
 				<div class="item">
-					<div class="svg">{@html skills[tool].svg}</div>
-					<p>{tool}</p>
+          <Skill name={tool} skill={skills[tool]} />
 				</div>
 			{/each}
 		</div>
@@ -138,7 +138,7 @@
 		align-items: center;
 		justify-content: space-between;
 		flex-direction: column;
-		padding: 2rem 4rem;
+		padding: 2rem 3rem;
 	}
 
 	.svg {
@@ -153,6 +153,7 @@
 		font-weight: 600;
 	}
 	.desc {
+    text-align: center;
 		grid-area: 2 / 2 / 3 /4;
 		font-size: 2rem;
 		width: 50%;

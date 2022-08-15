@@ -1,17 +1,5 @@
 <script lang="ts">
-	import imProjects from '../../../lib/projects.js';
-	let projects: any = imProjects;
-	let project: {
-		name: string;
-		desc: string;
-		iframe: Boolean;
-		live: string;
-    wip: Boolean;
-    imgsrc: string;
-		github: string;
-		tools: string[];
-	};
-
+	import projects from '../../../lib/projects.js';
 </script>
 
 <sevlte:head>

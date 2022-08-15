@@ -1,6 +1,7 @@
 <script>
 	import skills from '../../lib/skills.js';
 	import projects from '../../lib/projects.js';
+  import Skill from '../../components/skill/Skill.svelte'
 </script>
 
 <sevlte:head>
@@ -58,16 +59,10 @@
 				<h3>Structure</h3>
 				<div class="imgGroup">
 					<div class="imgContainer">
-						<div class="svg">
-							{@html skills.html.svg}
-						</div>
-						<h4>{skills.html.name}</h4>
+            <Skill name='html' skill={skills.html} />
 					</div>
 					<div class="imgContainer">
-						<div class="svg">
-							{@html skills.css.svg}
-						</div>
-						<h4>{skills.css.name}</h4>
+            <Skill name='css' skill={skills.css} />
 					</div>
 				</div>
 				<p>
@@ -79,16 +74,10 @@
 				<h3>Front-End</h3>
 				<div class="imgGroup">
 					<div class="imgContainer">
-						<div class="svg">
-							{@html skills.javascript.svg}
-						</div>
-						<h4>{skills.javascript.name}</h4>
+            <Skill name='javascript' skill={skills.javascript} />
 					</div>
 					<div class="imgContainer">
-						<div class="svg">
-							{@html skills.react.svg}
-						</div>
-						<h4>{skills.react.name}</h4>
+            <Skill name='react' skill={skills.react} />
 					</div>
 				</div>
 				<p>
@@ -100,22 +89,13 @@
 				<h3>Back-End</h3>
 				<div class="imgGroup">
 					<div class="imgContainer">
-						<div class="svg">
-							{@html skills.mongodb.svg}
-						</div>
-						<h4>{skills.mongodb.name}</h4>
+            <Skill name='mongodb' skill={skills.mongodb} />
 					</div>
 					<div class="imgContainer">
-						<div class="svg">
-							{@html skills.express.svg}
-						</div>
-						<h4>{skills.express.name}</h4>
+            <Skill name='express' skill={skills.express} />
 					</div>
 					<div class="imgContainer">
-						<div class="svg">
-							{@html skills.nodejs.svg}
-						</div>
-						<h4>{skills.nodejs.name}</h4>
+            <Skill name='nodejs' skill={skills.nodejs} />
 					</div>
 				</div>
 				<p>
@@ -282,6 +262,7 @@
 			grid-area: 3 / 1 / 4 / 2;
 			text-align: center;
 			max-width: 40ch;
+      margin: auto;
 		}
 	}
 
