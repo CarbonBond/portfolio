@@ -8,7 +8,7 @@ COPY . .
 
 RUN apt-get update || : && apt-get install python -y
 
-RUN npm ci && npm i -D node-sass
+RUN npm ci 
 
 RUN npm run build && npm prune --production
 

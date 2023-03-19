@@ -17,7 +17,7 @@ let projects = {
   },
   pong: {
     name: "Pong",
-    desc: "Its Pong! A game with a ball and two paddles. This version is created using C++ with SDL for graphics. It can be compiled to emscripten, which is why you can play the game on the web. Font doesn't work on emscripten compiling, but you can still enjoy the game! As you play, the AI paddle difficulty will increase/decrease based on your skills.",
+    desc: "Its Pong! A game with a ball and two paddles. This version is created using C++ with SDL for grapgics. It can be compiled to emscripten, which is why you can play the game on the web. Font doesn't work on emscripten compiling, but you can still enjoy the game! As you play, the AI paddle difficulty will increase/decrease based on your skills.",
     github: "https://github.com/CarbonBond/tic-tac-toe",
     iframe: false,
     live: "https://pong.brandonburge.com",
@@ -39,9 +39,9 @@ let projects = {
 CURL is avaliable on each post. You will find me posting about Software here! Build using functional React, along with a search system.`,
     github: "https://github.com/CarbonBond/blog-frontend",
     iframe: true,
-    live: "https://blog.brandonburge.com/posts",
+    live: "https://blog.brandonburge.com",
     imgsrc: "/images/blog.png",
-    wip: false,
+    wip: true,
     tools: [
       "html",
       "css",
@@ -117,7 +117,7 @@ Communitcation can be down with private messaging, along with chats deticated to
     desc: "A Website for a friends land surveying company. Allows for email contact using a form. There isn't a public github for this, as it is their site.",
     github: "https://github.com/CarbonBond",
     iframe: true,
-    live: "https://brandonbrownlandsurvey.com",
+    live: "https://bb.wickedvoid.com",
     imgsrc: "/images/bbsurvey.png",
     wip: false,
     tools: [
@@ -161,39 +161,7 @@ Communitcation can be down with private messaging, along with chats deticated to
     ]
   },
 
-  godotgame: {
-    name: "Godot Game",
-    desc: "A basic game made in godot, ported with emscripten.",
-    github: "https://github.com/CarbonBond/",
-    iframe: true,
-    live: "https://godot.brandonburge.com",
-    imgsrc: "/images/godot.png",
-    wip: false,
-    tools: [
-      "html",
-      "css",
-      "cplusplus",
-      "docker",
-      "nginx"
-    ]
-  },
 
-  codeproblempage: {
-    name: "CodeProblem.Page",
-    desc: "A website with some solved coding problems.",
-    github: "https://github.com/CarbonBond/codeproblempage",
-    iframe: false,
-    live: "https://codeproblem.page",
-    imgsrc: "/images/codeproblempage.png",
-    wip: true,
-    tools: [
-      "html",
-      "css",
-      "cplusplus",
-      "docker",
-      "nginx"
-    ]
-  },
   
 
 }

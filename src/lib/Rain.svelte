@@ -1,10 +1,10 @@
-<script lang="ts">
+<script >
 	import { onMount } from 'svelte';
 
-	export let minHeight: number;
-	export let maxHeight: number;
-	export let rainCounter: number;
-	let rainContainer: HTMLElement;
+	export let minHeight;
+	export let maxHeight;
+	export let rainCounter;
+	let rainContainer;
 
 	onMount(() => {
 		for (let i = 0; i < rainCounter; i++) {
@@ -13,7 +13,7 @@
 			}, Math.random() * 4000);
 		}
 
-		const createRainDrop = (node: HTMLElement, minHeight: number, maxHeight: number) => {
+		const createRainDrop = (node, minHeight, maxHeight) => {
 			if (!node) {
 				return;
 			}
@@ -26,14 +26,14 @@
 					Math.random() * maxHeight
 				)}px; `
 			);
-			let prevTimeStamp: number;
-			let x: number = 0 - maxHeight;
+			let prevTimeStamp;
+			let x= 0 - maxHeight;
 			node.appendChild(rain);
 
 			let frame = requestAnimationFrame(loop);
 			let speed = Math.max(30, Math.random() * 100);
 
-			function loop(timestamp: number) {
+			function loop(timestamp) {
 				if (prevTimeStamp === undefined) {
 					prevTimeStamp = timestamp;
 				}

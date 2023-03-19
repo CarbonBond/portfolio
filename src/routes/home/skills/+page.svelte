@@ -1,6 +1,6 @@
-<script lang="ts">
-	import skills from '../../lib/skills.js';
-	import Skill from '../../components/skill/Skill.svelte';
+<script>
+	import skills from '$lib/skills.js';
+	import Skill from '$lib/Skill.svelte';
 </script>
 
 <sevlte:head>
@@ -11,29 +11,35 @@
 	/>
 </sevlte:head>
 
-
 <div class="skill">
 	{#each Object.entries(skills) as [name, skill]}
-    <div class="margin">
+		<div class="item ">
       <Skill name={name} skill={skill} />
-    </div>
+		</div>
 	{/each}
 </div>
 
 <style>
+	.item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: column;
+		padding: 2rem 4rem;
+	}
 
-  .margin {
-    margin: 1em;
-  }
 	.skill {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 		padding: 0 15%;
 	}
-	@media screen and (max-width: 500px) {
-		.skill {
-			padding: 0 0;
-		}
-	}
+  @media screen and (max-width: 500px) {
+    .item{
+      padding: 2rem 3rem;
+    }
+    .skill{
+      padding: 0 0;
+    }
+  }
 </style>

@@ -1,8 +1,8 @@
-<script lang="ts">
+<script>
 	import '../../styles/global.css';
-	import Header from '../../components/Header.svelte';
-	import Rain from '../../components/Rain.svelte';
-	import Footer from '../../components/Footer.svelte';
+	import Header from '$lib/Header.svelte';
+	import Rain from '$lib/Rain.svelte';
+	import Footer from '$lib/Footer.svelte';
 </script>
 
 <div class="main">

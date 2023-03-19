@@ -1,5 +1,5 @@
 <script>
-	import Rain from '../components/Rain.svelte';
+	import Rain from '$lib/Rain.svelte';
 	import { fade } from 'svelte/transition';
 </script>
 

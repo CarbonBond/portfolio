@@ -1,23 +1,14 @@
-<script lang="ts">
+<script>
 	import { onMount } from 'svelte';
-	import imProjects from '../../../lib/projects.js';
-	import skill from '../../../lib/skills';
-  import Skill from '../../../components/skill/Skill.svelte'
+	import imProjects from '$lib/projects.js';
+	import skills from '$lib/skills';
+	import Skill from '$lib/Skill.svelte';
 
-	let skills: any = skill;
-	let projects: any = imProjects;
-	let project: {
-		name: string;
-		desc: string;
-		iframe: Boolean;
-		live: string;
-    imgsrc: string;
-		github: string;
-		tools: string[];
-	};
+	let projects = imProjects;
+  let project;
 	onMount(() => {
 		let pathname = window.location.pathname;
-		let location: string = pathname.split('/')[3];
+		let location = pathname.split('/')[3];
 		project = projects[location];
 	});
 </script>
@@ -138,22 +129,10 @@
 		align-items: center;
 		justify-content: space-between;
 		flex-direction: column;
-		padding: 2rem 3rem;
+		padding: 2rem 4rem;
 	}
 
-	.svg {
-		font-size: 8rem;
-		height: 10rem;
-		width: 10rem;
-		text-align: center;
-	}
-
-	.item p {
-		font-size: 2.2rem;
-		font-weight: 600;
-	}
 	.desc {
-    text-align: center;
 		grid-area: 2 / 2 / 3 /4;
 		font-size: 2rem;
 		width: 50%;

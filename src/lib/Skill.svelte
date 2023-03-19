@@ -1,6 +1,6 @@
-<script lang="ts">
-	export let skill: any;
-  export let name: any; 
+<script>
+	export let skill;
+  export let name; 
 
 	let open = false;
 	let onclick = () => {
@@ -13,14 +13,14 @@
 </script>
 
 <div>
-	<div class="item " id={name} on:click={onclick}>
+	<button class="item " id={name} on:click={onclick}>
 		<div class="svg">
 			{@html skill.svg}
 		</div>
 		<p>{skill.name}</p>
-	</div>
+	</button>
 
-	<div class:open class="container" on:click={onclick}>
+	<button class:open class="container" on:click={onclick}>
 		<div class="data">
 			<h4>
 				{skill.name}
@@ -28,18 +28,22 @@
 			<p class="desc">{skill.desc}</p>
 			<p class="use">{skill.use}</p>
 		</div>
-	</div>
+	</button>
 </div>
 
 <style>
 
+  button {
+    border: none;
+    color: white;
+  }
 	.item {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		flex-direction: column;
     padding: 1em;
-    background-color: none;
+    background-color: inherit;
     transition: background-color 0.65s;
     border-radius: 10px;
   }

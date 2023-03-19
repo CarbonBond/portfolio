@@ -1,7 +1,6 @@
 <script>
-	import skills from '../../lib/skills.js';
-	import projects from '../../lib/projects.js';
-  import Skill from '../../components/skill/Skill.svelte'
+	import skills from '$lib/skills.js';
+  import Skill from '$lib/Skill.svelte';
 </script>
 
 <sevlte:head>
@@ -13,16 +12,15 @@
 		<article class="description">
 			<h3>Hi, I'm Brandon.</h3>
 			<p>
-				I'm a multifaceted person when it comes to software development. From modding games with
-				lua, to styling websites with SCSS. I have a wide amount of skills and am always ready and
-				wanting to learns more.
-				<br />
-				<br />
-				I currently focus on web development with Front-End apps using React or Svelte. The Back-End
-				servers use Nodejs or Go. As for databases, I use mongoDB or Prisma as a ORM for sql.
+				I began my journey with code 12 years ago by modding minecraft. This led to C++ terminal
+				games and Python automation. Everyone needs a website, so I begain to create mine.
+				<br /><br />
+        After a while of web dev with svelte, react, and vanilla JS, I wanted more complexity.
+        This lead me to learning basic x86 assembly and C, which is currently my favorite language.
+        I love using C for embeded devices, rendering, and performance heavy programs.
 			</p>
 		</article>
-		<img src="/images/ProPic.png" alt="Brandon B" class="picture" />
+    <img src="/images/ProPic.png" alt="Brandon B" class="picture" />
 	</section>
 
 	<section class="project">
@@ -108,113 +106,115 @@
 	</section>
 </div>
 
-<style lang="scss">
+
+<style>
 	.container {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		padding-bottom: 30px;
-		section {
+	}
+  
+	.container section {
 			min-height: 85vh;
 			display: flex;
 			margin-bottom: 30rem;
 		}
-	}
 
 	.intro {
 		justify-content: space-evenly;
 		align-items: center;
-		padding: 4rem;
-		flex-wrap: wrap-reverse;
+		padding-top: 4rem;
+	}
 
-		img {
+  .picture {
 			flex: 1 1 auto;
 			max-width: 90ch;
 			padding: 1em;
-		}
-	}
+  }
 
 	.project {
 		flex-direction: column;
 		align-items: center;
 		margin: 20rem 0;
-		margin: auto;
+    margin: auto;
 
-		h3 {
+	}
+	.project h3 {
 			font-size: 5rem;
 			margin-bottom: 4rem;
 		}
 
-		h2 {
+	.project h2 {
 			font-size: 4rem;
 			margin-bottom: 2rem;
 		}
-		h4 {
+	.project h4 {
 			font-size: 2.5rem;
-			overflow: none;
+      overflow: none;
 		}
-		h2,
-		h4 {
+	.project h2,
+	.project h4 {
 			text-align: center;
 		}
-		img:hover {
-			border: 2px solid hsl(270, 100%, 36%);
-		}
-		.main {
+  .project img:hover {
+
+      border: 2px solid hsl(var(--core-purple));
+    }
+	.project .main {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 
-			* {
+		}
+		.project .main 	* {
 				margin: 1rem 0;
 			}
 
-			a {
+	.project .main	a {
 				width: 100%;
 
-				img {
+			}
+	.project .main a img {
 					object-fit: cover;
 				}
-			}
 
-			p {
+	.project .main 		p {
 				text-align: justify;
 				min-width: 25ch;
 				margin-bottom: 5rem;
 			}
-		}
 
-		.other {
+	.project .other {
 			display: flex;
 			justify-content: space-evenly;
-			flex-wrap: wrap;
+      flex-wrap: wrap;
 			width: 100%;
 
-			a {
+		}
+	.project .other a {
 				margin: 10px;
 				max-width: 360px;
 				max-height: 220px;
 
-				margin: 4rem;
-				img {
-					width: 100%;
-					height: 100%;
-					object-fit: cover;
-				}
+        margin: 4rem;
 			}
-		}
-	}
+  .project .other a img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
 
 	.skills {
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-start;
 		margin-bottom: 0px !important;
-		.title {
+	}
+	.skills .title {
 			font-size: 4rem;
 			margin-bottom: 4rem;
 		}
-	}
 
 	.buttonArea {
 		width: 100%;
@@ -222,35 +222,37 @@
 		align-items: center;
 		justify-content: center;
 		padding: 5rem;
-		.button {
+	}
+	.buttonArea .button {
 			font-size: 25px;
 			font-weight: bold;
 			padding: 25px;
 			max-height: 30px;
 		}
-	}
 
 	.webskill {
 		display: flex;
-		align-items: center;
 		justify-content: space-around;
 		flex-wrap: wrap;
 		width: 80%;
+    min-height: 400px;
 	}
 
 	.skill {
 		display: grid;
+    width: 33%;
+    justify-items: center;
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 6fr 4fr;
 		height: 25rem;
-		margin: 70px 0;
-		h3 {
+	}
+		.skill h3 {
 			font-size: 26px;
 			align-self: flex-end;
 			text-align: center;
 			grid-area: 1 / 1 / 2 / 2;
 		}
-		.imgGroup {
+		.skill .imgGroup {
 			display: flex;
 			margin: 20px;
 			grid-area: 2 / 1 / 3 / 2;
@@ -258,13 +260,11 @@
 			align-items: center;
 			justify-content: space-around;
 		}
-		p {
+		.skill p {
 			grid-area: 3 / 1 / 4 / 2;
 			text-align: center;
 			max-width: 40ch;
-      margin: auto;
 		}
-	}
 
 	.imgContainer {
 		display: flex;
@@ -275,49 +275,37 @@
 	}
 
 	.description {
-		min-width: 40ch;
-		max-width: 90ch;
-		h3 {
-			font-size: 4.5rem;
-		}
-		p {
-			font-size: 2.5rem;
-		}
+		max-width: 70ch;
 	}
+		.description h3 {
+			font-size: 3rem;
+		}
+		.description p {
+			font-size: 2rem;
+		}
 
-	.svg {
-		font-size: 8rem;
-		height: 10rem;
-		width: 10rem;
-		text-align: center;
-	}
 
-	@media screen and (max-width: 700px) {
+	@media screen and (max-width: 500px) {
 		.picture {
 			display: none;
 		}
 
 		.project {
 			padding: 0 1rem;
-
-			.main {
-				a {
-					width: 90%;
-				}
-			}
-			.other {
-				flex-direction: column;
-				align-items: center;
-				a {
-					width: 80%;
-				}
-			}
 		}
-
-		.description {
-			p {
-				max-width: 30ch;
+		.project .main a {
+        width: 90%;
 			}
+    .project .other {
+      flex-direction: column;
+      align-items: center;
+    }
+    .project .other a  {
+        width: 80%;
+      }
+
+		.description p {
+      max-width: 30ch;
 		}
 	}
 </style>

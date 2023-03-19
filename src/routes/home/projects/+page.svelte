@@ -1,5 +1,5 @@
-<script lang="ts">
-	import projects from '../../../lib/projects.js';
+<script>
+	import projects from '$lib/projects.js';
 </script>
 
 <sevlte:head>
@@ -16,25 +16,8 @@
 		{/if}
 	{/each}
 </div>
-<h4>WIP</h4>
-<div class="container">
-	{#each Object.entries(projects) as [title, project]}
-		{#if project.wip}
-				<a href="projects/{title}" class="project">
-					<div class="title">{project.name}</div>
-					<img src={project.imgsrc} alt="" />
-				</a>
-		{/if}
-	{/each}
-</div>
   <div class="spacer" />
 <style>
-  h4{
-    width:100%;
-    font-size: 4rem;
-    text-align: center;
-    grid-row: 1 / 2;
-  }
 	img {
     grid-row: 2 / 3;
     height: 100%;
