@@ -117,7 +117,7 @@ Communitcation can be down with private messaging, along with chats deticated to
     desc: "A Website for a friends land surveying company. Allows for email contact using a form. There isn't a public github for this, as it is their site.",
     github: "https://github.com/CarbonBond",
     iframe: true,
-    live: "https://bb.wickedvoid.com",
+    live: "https://brandonbrownlandsurvey.com",
     imgsrc: "/images/bbsurvey.png",
     wip: false,
     tools: [
