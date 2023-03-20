@@ -80,7 +80,7 @@ CURL is avaliable on each post. You will find me posting about Software here! Bu
     iframe: true,
     live: "https://tweetor.brandonburge.com",
     imgsrc: "/images/tweetor.png",
-    wip: false,
+    wip: true,
     tools: [
       "html",
       "css",

@@ -26,9 +26,9 @@
 	<section class="project">
 		<h3>Projects</h3>
 		<div class="main">
-			<a href="/home/projects/tweetor">
-				<h2>Tweetor</h2>
-				<img src="/images/tweetor.png" alt="" />
+			<a href="/home/projects/resume">
+				<h2>Resume</h2>
+				<img src="/images/resume.png" alt="" />
 				<p />
 			</a>
 		</div>
