@@ -60,7 +60,7 @@ CURL is avaliable on each post. You will find me posting about Software here! Bu
     iframe: false,
     live: "https://blog.brandonburge.com",
     imgsrc: "/images/blog-api.png",
-    wip: false,
+    wip: true,
     tools: [
       "html",
       "css",
