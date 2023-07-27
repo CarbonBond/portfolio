@@ -13,11 +13,11 @@
 			<h3>Hi, I'm Brandon.</h3>
 			<p>
 				I began my journey with code 12 years ago by modding minecraft. This led to C++ terminal
-				games and Python automation. Everyone needs a website, so I begain to create mine.
+				games and Python automation. Everyone needs a website, so I began to create mine.
 				<br /><br />
-        After a while of web dev with svelte, react, and vanilla JS, I wanted more complexity.
-        This lead me to learning basic x86 assembly and C, which is currently my favorite language.
-        I love using C for embeded devices, rendering, and performance heavy programs.
+        After a while of web development with Svelte, React, and Vanilla JS, I wanted more complexity.
+        This led me to learn basic x86 assembly and C, which is currently my favorite language.
+        I love using C for embedded devices, rendering, and performance-heavy programs.
 			</p>
 		</article>
     <img src="/images/ProPic.png" alt="Brandon B" class="picture" />
