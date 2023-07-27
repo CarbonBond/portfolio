@@ -138,6 +138,7 @@
 		width: 50%;
     min-width: 30ch;
 		justify-self: center;
+    text-align: center;
 		margin: 5rem;
 	}
 	@media screen and (max-width: 500px) {

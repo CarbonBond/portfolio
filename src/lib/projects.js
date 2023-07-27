@@ -119,7 +119,7 @@ Communitcation can be down with private messaging, along with chats deticated to
     iframe: true,
     live: "https://brandonbrownlandsurvey.com",
     imgsrc: "/images/bbsurvey.png",
-    wip: false,
+    wip: true,
     tools: [
       "html",
       "css",
@@ -158,6 +158,42 @@ Communitcation can be down with private messaging, along with chats deticated to
       "css",
       "docker",
       "nginx"
+    ]
+  },
+  renderer: {
+    name: "3d CPU Renderer",
+    desc: "A renderer that uses old fasion rendering.",
+    github: "https://github.com/CarbonBond/3dRenderer",
+    iframe: false,
+    live: "https://brandonburge.com/home/projects/renderer",
+    imgsrc: "/images/renderer.png",
+    wip: false,
+    tools: [
+      "c"
+    ]
+  },
+  astroids: {
+    name: "Astroids",
+    desc: "A replica astroids game.",
+    github: "https://github.com/CarbonBond/AstroidsReplica",
+    iframe: false,
+    live: "https://brandonburge.com/home/projects/astroids",
+    imgsrc: "/images/astroids.png",
+    wip: false,
+    tools: [
+      "odin"
+    ]
+  },
+  renderer: {
+    name: "3d CPU Renderer",
+    desc: "A renderer that uses old fasion rendering.",
+    github: "https://github.com/CarbonBond/3dRenderer",
+    iframe: false,
+    live: "https://brandonburge.com/home/projects/renderer",
+    imgsrc: "/images/renderer.png",
+    wip: false,
+    tools: [
+      "c"
     ]
   },
 
