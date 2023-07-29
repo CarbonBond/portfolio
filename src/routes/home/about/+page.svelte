@@ -20,7 +20,7 @@
         I love using C for embedded devices, rendering, and performance-heavy programs.
 			</p>
 		</article>
-    <img src="/images/ProPic.png" alt="Brandon B" class="picture" />
+    <img src="/images/ProPic.png" alt="Picture of Brandon B" class="picture" />
 	</section>
 
 	<section class="project">
@@ -37,9 +37,9 @@
 				<h4>Sketch-n-Etch</h4>
 				<img src="/images/sketch.png" alt="" />
 			</a>
-			<a href="/home/projects/bbsurvey">
-				<h4>Brandon Brown Land Surveying</h4>
-				<img src="/images/bbsurvey.png" alt="" class="8bit" />
+			<a href="/home/projects/3dRenderer">
+				<h4>3d CPU renderer</h4>
+				<img src="/images/renderer.png" alt="" class="8bit" />
 				<p />
 			</a>
 			<a href="/home/projects/pong">
