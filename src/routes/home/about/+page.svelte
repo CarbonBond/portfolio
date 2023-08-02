@@ -37,7 +37,7 @@
 				<h4>Sketch-n-Etch</h4>
 				<img src="/images/sketch.png" alt="" />
 			</a>
-			<a href="/home/projects/3dRenderer">
+			<a href="/home/projects/renderer">
 				<h4>3d CPU renderer</h4>
 				<img src="/images/renderer.png" alt="" class="8bit" />
 				<p />
