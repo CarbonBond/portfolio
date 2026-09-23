@@ -39,6 +39,7 @@
 						<p>github</p>
 					</a>
 				</div>
+        {#if project.live != ""}
 				<div class="icon">
 					<a href={project.live} target="_blank">
 						<svg version="1.1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -63,6 +64,7 @@
 					</a>
 					<p>Live</p>
 				</div>
+        {/if}
 			</div>
 		</div>
 		<div class="skills">

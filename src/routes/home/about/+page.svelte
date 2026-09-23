@@ -23,9 +23,9 @@
 	<section class="project">
 		<h3>Projects</h3>
 		<div class="main">
-			<a href="/home/projects/resume">
-				<h2>Resume</h2>
-				<img src="/images/resume.png" alt="" />
+			<a href="/home/projects/renderer">
+				<h2>3d CPU renderer</h2>
+				<img src="/images/renderer.png" alt="" class="8bit" />
 				<p />
 			</a>
 		</div>
@@ -34,9 +34,9 @@
 				<h4>Sketch-n-Etch</h4>
 				<img src="/images/sketch.png" alt="" />
 			</a>
-			<a href="/home/projects/renderer">
-				<h4>3d CPU renderer</h4>
-				<img src="/images/renderer.png" alt="" class="8bit" />
+			<a href="/home/projects/resume">
+				<h4>Resume</h4>
+				<img src="/images/resume.png" alt="" />
 				<p />
 			</a>
 			<a href="/home/projects/pong">
@@ -204,8 +204,10 @@
 	.project h4 {
 			text-align: center;
 		}
+  .project img {
+      border: 2px solid hsl(var(--dark-blue));
+  }
   .project img:hover {
-
       border: 2px solid hsl(var(--core-purple));
     }
 	.project .main {

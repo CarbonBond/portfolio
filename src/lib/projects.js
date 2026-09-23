@@ -165,7 +165,7 @@ Communication can be done through private messaging, along with chats designated
     desc: "A renderer that uses old-fashioned rendering.",
     github: "https://github.com/CarbonBond/3dRenderer",
     iframe: false,
-    live: "https://brandonburge.com/home/projects/renderer",
+    live: "",
     imgsrc: "/images/renderer.png",
     wip: false,
     tools: [
@@ -177,7 +177,7 @@ Communication can be done through private messaging, along with chats designated
     desc: "A replica astroids game.",
     github: "https://github.com/CarbonBond/AstroidsReplica",
     iframe: false,
-    live: "https://brandonburge.com/home/projects/astroids",
+    live: "",
     imgsrc: "/images/astroids.png",
     wip: false,
     tools: [

@@ -22,6 +22,9 @@
 
 	<button class:open class="container" on:click={onclick}>
 		<div class="data">
+      <div class="svg">
+        {@html skill.svg}
+      </div>
 			<h4>
 				{skill.name}
 			</h4>
@@ -112,13 +115,14 @@
 	}
 
 	.desc {
-		font-size: 1.5em;
+		font-size: 1.2em;
 		margin-bottom: 2em;
 	}
 
 	.use {
-		font-size: 1.5em;
+		font-size: 1.2em;
 		margin-bottom: 2em;
+    font-weight: 500;
 	}
 
 	.open {
