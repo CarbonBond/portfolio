@@ -12,12 +12,9 @@
 		<article class="description">
 			<h3>Hi, I'm Brandon.</h3>
 			<p>
-				I began my journey with code 12 years ago by modding minecraft. This led to C++ terminal
-				games and Python automation. Everyone needs a website, so I began to create mine.
+        I'm a embedded C++ engineer at EFJohson developing performant reliable 
+        software for Fire, EMS, and Police.
 				<br /><br />
-        After a while of web development with Svelte, React, and Vanilla JS, I wanted more complexity.
-        This led me to learn basic x86 assembly and C, which is currently my favorite language.
-        I love using C for embedded devices, rendering, and performance-heavy programs.
 			</p>
 		</article>
     <img src="/images/ProPic.png" alt="Picture of Brandon B" class="picture" />
@@ -47,11 +44,62 @@
 				<img src="/images/pong.png" alt="" />
 			</a>
 		</div>
-		<div class="buttonArea"><a href="/home/skills" class="button">See More</a></div>
+		<div class="buttonArea"><a href="/home/projects" class="button">See More</a></div>
 	</section>
 
 	<section class="skills">
-		<h3 class="title">Skills</h3>
+		<h3 class="title">Embedded</h3>
+		<div class="webskill">
+
+			<article class="skill">
+				<h3>Language</h3>
+				<div class="imgGroup">
+					<div class="imgContainer">
+            <Skill name='C++' skill={skills.cplusplus} />
+					</div>
+				</div>
+				<p>
+        Using C++ I've developed radio software for emergency radio. 
+				</p>
+			</article>
+
+			<article class="skill">
+				<h3>Tooling</h3>
+				<div class="imgGroup">
+					<div class="imgContainer">
+            <Skill name='Bash' skill={skills.bash} />
+					</div>
+					<div class="imgContainer">
+            <Skill name='Make' skill={skills.make} />
+					</div>
+					<div class="imgContainer">
+            <Skill name='Python' skill={skills.python} />
+					</div>
+				</div>
+				<p>
+          I've used vairous scripting languages to build, deploy, and package products. 
+				</p>
+			</article>
+
+			<article class="skill">
+				<h3>Data</h3>
+				<div class="imgGroup">
+					<div class="imgContainer">
+            <Skill name='XML' skill={skills.xml} />
+					</div>
+					<div class="imgContainer">
+            <Skill name='PostgresSql' skill={skills.postgressql} />
+					</div>
+				</div>
+				<p>
+        Used to store config information. PostgresSql was for dynamic registration and authentaction information.
+				</p>
+			</article>
+		</div>
+	</section>
+
+	<section class="skills">
+		<h3 class="title">Web Skills</h3>
 		<div class="webskill">
 			<article class="skill">
 				<h3>Structure</h3>
@@ -116,9 +164,8 @@
 	}
   
 	.container section {
-			min-height: 85vh;
 			display: flex;
-			margin-bottom: 30rem;
+			margin-bottom: 20rem;
 		}
 
 	.intro {
