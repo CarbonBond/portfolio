@@ -6,7 +6,7 @@ COPY package*.json ./
 
 COPY . .
 
-RUN apt-get update || : && apt-get install python -y
+RUN apt-get update || : && apt-get install python3 -y
 
 RUN npm ci 
 
